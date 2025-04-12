@@ -1,0 +1,1751 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Заменители мяса: Полное руководство</title>
+    <link rel="stylesheet" href="styles.css">
+  <style>
+    /* Базовые стили */
+:root {
+    --primary-color: #4caf50;
+    --primary-dark: #388e3c;
+    --primary-light: #c8e6c9;
+    --secondary-color: #ff5722;
+    --text-color: #333;
+    --text-light: #666;
+    --background-color: #f5f5f5;
+    --card-color: #fff;
+    --border-color: #e0e0e0;
+    --shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    --border-radius: 8px;
+    --spacing: 16px;
+    --container-width: 1200px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: var(--text-color);
+    background-color: var(--background-color);
+    line-height: 1.6;
+}
+
+.container {
+    max-width: var(--container-width);
+    margin: 0 auto;
+    padding: 0 var(--spacing);
+}
+
+/* Заголовки */
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 600;
+    margin-bottom: var(--spacing);
+    color: var(--text-color);
+}
+
+h1 {
+    font-size: 2.5rem;
+}
+
+h2 {
+    font-size: 2rem;
+    border-bottom: 2px solid var(--primary-light);
+    padding-bottom: 8px;
+    margin-bottom: 24px;
+}
+
+h3 {
+    font-size: 1.5rem;
+}
+
+h4 {
+    font-size: 1.25rem;
+}
+
+h5 {
+    font-size: 1rem;
+}
+
+/* Ссылки и кнопки */
+a {
+    color: var(--primary-color);
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+a:hover {
+    color: var(--primary-dark);
+}
+
+button {
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    padding: 10px 16px;
+    border-radius: var(--border-radius);
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: var(--primary-dark);
+}
+
+/* Хедер и навигация */
+header {
+    background-color: var(--primary-color);
+    color: white;
+    padding: var(--spacing) 0;
+    box-shadow: var(--shadow);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+header h1 {
+    color: white;
+    margin-bottom: 10px;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    flex-wrap: wrap;
+}
+
+nav ul li {
+    margin-right: 20px;
+    margin-bottom: 5px;
+}
+
+nav ul li a {
+    color: white;
+    font-weight: 500;
+    padding: 8px 0;
+    position: relative;
+}
+
+nav ul li a::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: white;
+    transition: width 0.3s;
+}
+
+nav ul li a:hover::after {
+    width: 100%;
+}
+
+/* Секции */
+.section {
+    padding: 40px 0;
+}
+
+/* Карточки */
+.card {
+    background-color: var(--card-color);
+    border-radius: var(--border-radius);
+    box-shadow: var(--shadow);
+    padding: var(--spacing);
+    margin-bottom: var(--spacing);
+}
+
+.card-content ul {
+    padding-left: 20px;
+    margin-bottom: var(--spacing);
+}
+
+/* Сетка продуктов */
+.products-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: var(--spacing);
+    margin-top: var(--spacing);
+}
+
+.product-card {
+    background-color: var(--card-color);
+    border-radius: var(--border-radius);
+    box-shadow: var(--shadow);
+    padding: var(--spacing);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.product-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.product-card img {
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-bottom: 15px;
+}
+
+.product-card h3 {
+    margin-bottom: 10px;
+}
+
+.product-card p {
+    color: var(--text-light);
+    margin-bottom: 15px;
+}
+
+.details-btn {
+    margin-top: auto;
+}
+
+/* Таблица питательных веществ */
+.nutrition-table {
+    overflow-x: auto;
+    margin-top: var(--spacing);
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: var(--card-color);
+    box-shadow: var(--shadow);
+    border-radius: var(--border-radius);
+    overflow: hidden;
+}
+
+/* Продолжение таблицы питательных веществ */
+th, td {
+    padding: 12px 15px;
+    text-align: left;
+    border-bottom: 1px solid var(--border-color);
+}
+
+th {
+    background-color: var(--primary-light);
+    color: var(--text-color);
+    font-weight: 600;
+}
+
+tr:hover {
+    background-color: rgba(0, 0, 0, 0.02);
+}
+
+/* План питания */
+.meal-plan-container {
+    background-color: var(--card-color);
+    border-radius: var(--border-radius);
+    box-shadow: var(--shadow);
+    overflow: hidden;
+    margin-top: var(--spacing);
+}
+
+.meal-plan-tabs {
+    display: flex;
+    background-color: var(--primary-light);
+    border-bottom: 1px solid var(--border-color);
+    overflow-x: auto;
+}
+
+.tab-btn {
+    background-color: transparent;
+    color: var(--text-color);
+    padding: 12px 20px;
+    border: none;
+    border-bottom: 3px solid transparent;
+    cursor: pointer;
+    font-weight: 500;
+    transition: all 0.3s;
+}
+
+.tab-btn:hover {
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+.tab-btn.active {
+    border-bottom-color: var(--primary-color);
+    color: var(--primary-dark);
+}
+
+.meal-plan-content {
+    display: none;
+    padding: var(--spacing);
+}
+
+.meal-plan-content.active {
+    display: block;
+}
+
+.day-plan {
+    margin-bottom: 20px;
+}
+
+.meals {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 15px;
+    margin-top: 10px;
+}
+
+.meal {
+    background-color: var(--background-color);
+    padding: 15px;
+    border-radius: var(--border-radius);
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
+}
+
+.meal h5 {
+    color: var(--primary-color);
+    margin-bottom: 8px;
+}
+
+.meal p {
+    margin-bottom: 5px;
+}
+
+.meal small {
+    color: var(--text-light);
+    font-style: italic;
+}
+
+.expand-btn {
+    display: block;
+    margin: 20px auto 0;
+    background-color: transparent;
+    color: var(--primary-color);
+    border: 1px solid var(--primary-color);
+}
+
+.expand-btn:hover {
+    background-color: var(--primary-light);
+}
+
+/* Рецепты */
+.recipes-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: var(--spacing);
+    margin-top: var(--spacing);
+}
+
+.recipe-card {
+    background-color: var(--card-color);
+    border-radius: var(--border-radius);
+    box-shadow: var(--shadow);
+    overflow: hidden;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.recipe-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+}
+
+.recipe-card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+}
+
+.recipe-card h3 {
+    padding: 15px 15px 10px;
+    margin-bottom: 0;
+}
+
+.recipe-tags {
+    padding: 0 15px 10px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+}
+
+.tag {
+    background-color: var(--primary-light);
+    color: var(--primary-dark);
+    font-size: 0.8rem;
+    padding: 3px 8px;
+    border-radius: 12px;
+}
+
+.recipe-card p {
+    padding: 0 15px 15px;
+    color: var(--text-light);
+}
+
+.recipe-btn {
+    width: 100%;
+    padding: 12px;
+    border-radius: 0;
+}
+
+.more-recipes-btn {
+    display: block;
+    margin: 30px auto 0;
+    padding: 12px 25px;
+}
+
+/* Стратегии преодоления тяги к мясу */
+.cravings-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: var(--spacing);
+    margin-top: var(--spacing);
+}
+
+.craving-card {
+    background-color: var(--card-color);
+    border-radius: var(--border-radius);
+    box-shadow: var(--shadow);
+    padding: var(--spacing);
+}
+
+.craving-card h3 {
+    color: var(--primary-color);
+    margin-bottom: 15px;
+}
+
+.craving-card ul {
+    padding-left: 20px;
+}
+
+.craving-card li {
+    margin-bottom: 10px;
+}
+
+/* FAQ */
+.faq-container {
+    margin-top: var(--spacing);
+}
+
+.faq-item {
+    background-color: var(--card-color);
+    border-radius: var(--border-radius);
+    box-shadow: var(--shadow);
+    margin-bottom: 15px;
+    overflow: hidden;
+}
+
+.faq-question {
+    padding: 15px;
+    position: relative;
+    cursor: pointer;
+    margin: 0;
+    font-weight: 500;
+}
+
+.faq-question::after {
+    content: '+';
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 1.5rem;
+    transition: transform 0.3s;
+}
+
+.faq-item.active .faq-question::after {
+    transform: translateY(-50%) rotate(45deg);
+}
+
+.faq-answer {
+    padding: 0 15px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s, padding 0.3s;
+}
+
+.faq-item.active .faq-answer {
+    padding: 0 15px 15px;
+    max-height: 1000px;
+}
+
+.faq-answer p, .faq-answer ul {
+    margin-bottom: 10px;
+}
+
+.faq-answer ul {
+    padding-left: 20px;
+}
+
+/* Футер */
+footer {
+    background-color: #333;
+    color: white;
+    padding: 40px 0;
+    margin-top: 60px;
+}
+
+footer p {
+    margin-bottom: 10px;
+}
+
+/* Модальные окна */
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s, visibility 0.3s;
+}
+
+.modal-overlay.active {
+    opacity: 1;
+    visibility: visible;
+}
+
+.modal {
+    background-color: var(--card-color);
+    border-radius: var(--border-radius);
+    width: 90%;
+    max-width: 700px;
+    max-height: 90vh;
+    overflow-y: auto;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+    transform: translateY(20px);
+    opacity: 0;
+    transition: transform 0.3s, opacity 0.3s;
+}
+
+.modal-overlay.active .modal {
+    transform: translateY(0);
+    opacity: 1;
+}
+
+.modal-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.modal-header h2 {
+    margin: 0;
+    padding: 0;
+    border: none;
+}
+
+.close-btn {
+    background: none;
+    border: none;
+    color: var(--text-color);
+    font-size: 1.8rem;
+    cursor: pointer;
+    padding: 0;
+    line-height: 1;
+}
+
+.modal-content {
+    padding: 20px;
+}
+
+.nutrition-facts {
+    background-color: var(--background-color);
+    padding: 15px;
+    border-radius: var(--border-radius);
+    margin-bottom: 20px;
+}
+
+.nutrition-facts h4 {
+    border-bottom: 1px solid var(--border-color);
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+}
+
+.nutrition-facts ul {
+    list-style: none;
+    padding: 0;
+}
+
+.nutrition-facts li {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 5px;
+}
+
+.preparation, .combination, .warning {
+    margin-bottom: 20px;
+}
+
+.preparation h4, .combination h4, .warning h4 {
+    color: var(--primary-color);
+    margin-bottom: 10px;
+}
+
+.combination-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.combination-item {
+    background-color: var(--primary-light);
+    padding: 10px;
+    border-radius: var(--border-radius);
+    text-align: center;
+}
+
+.good {
+    background-color: #e8f5e9;
+    border-left: 4px solid #4caf50;
+}
+
+.bad {
+    background-color: #ffebee;
+    border-left: 4px solid #f44336;
+}
+
+.warning {
+    background-color: #fff8e1;
+    border-radius: var(--border-radius);
+    padding: 10px 15px;
+    border-left: 4px solid #ffc107;
+}
+
+/* Рецепт в модальном окне */
+.recipe-modal {
+    max-width: 800px;
+}
+
+.recipe-ingredients, .recipe-instructions, .recipe-notes {
+    margin-bottom: 20px;
+}
+
+.recipe-ingredients h4, .recipe-instructions h4, .recipe-notes h4 {
+    color: var(--primary-color);
+    margin-bottom: 10px;
+}
+
+.recipe-ingredients ul {
+    list-style: square;
+    padding-left: 20px;
+}
+
+.recipe-instructions ol {
+    padding-left: 20px;
+}
+
+.recipe-instructions li {
+    margin-bottom: 10px;
+}
+
+.recipe-notes {
+    background-color: var(--primary-light);
+    padding: 15px;
+    border-radius: var(--border-radius);
+}
+
+/* Адаптивный дизайн */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2rem;
+    }
+    
+    h2 {
+        font-size: 1.7rem;
+    }
+    
+    h3 {
+        font-size: 1.3rem;
+    }
+    
+    .meals {
+        grid-template-columns: 1fr;
+    }
+    
+    .cravings-container {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 480px) {
+    .products-grid, .recipes-container {
+        grid-template-columns: 1fr;
+    }
+    
+    .meal-plan-tabs {
+        flex-direction: column;
+    }
+    
+    .tab-btn {
+        width: 100%;
+        text-align: center;
+    }
+}
+  </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Заменители мяса: Полное руководство</h1>
+            <nav>
+                <ul>
+                    <li><a href="#why-replace">Зачем заменять мясо</a></li>
+                    <li><a href="#protein-sources">Источники белка</a></li>
+                    <li><a href="#nutrition">Питательные вещества</a></li>
+                    <li><a href="#meal-plans">Планы питания</a></li>
+                    <li><a href="#recipes">Рецепты</a></li>
+                    <li><a href="#cravings">Когда хочется мяса</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        <section id="why-replace" class="section">
+            <h2>Зачем заменять мясо</h2>
+            <div class="card">
+                <div class="card-content">
+                    <p>Люди выбирают безмясные альтернативы по разным причинам:</p>
+                    <ul>
+                        <li>Этические соображения</li>
+                        <li>Экологические причины</li>
+                        <li>Здоровье</li>
+                        <li>Религиозные убеждения</li>
+                        <li>Финансовые причины</li>
+                    </ul>
+                    <p>Независимо от причины, важно сбалансировать питание для получения всех необходимых питательных веществ.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="protein-sources" class="section">
+            <h2>Источники растительного белка</h2>
+
+            <div class="products-grid">
+                <div class="product-card" data-id="tofu">
+                    <img src="https://via.placeholder.com/150?text=Тофу" alt="Тофу">
+                    <h3>Тофу</h3>
+                    <p>Белок: 8г/100г</p>
+                    <button class="details-btn">Подробнее</button>
+                </div>
+
+                <div class="product-card" data-id="tempeh">
+                    <img src="https://via.placeholder.com/150?text=Темпе" alt="Темпе">
+                    <h3>Темпе</h3>
+                    <p>Белок: 19г/100г</p>
+                    <button class="details-btn">Подробнее</button>
+                </div>
+
+                <div class="product-card" data-id="seitan">
+                    <img src="https://via.placeholder.com/150?text=Сейтан" alt="Сейтан">
+                    <h3>Сейтан</h3>
+                    <p>Белок: 25г/100г</p>
+                    <button class="details-btn">Подробнее</button>
+                </div>
+
+                <div class="product-card" data-id="legumes">
+                    <img src="https://via.placeholder.com/150?text=Бобовые" alt="Бобовые">
+                    <h3>Бобовые</h3>
+                    <p>Белок: 7-9г/100г</p>
+                    <button class="details-btn">Подробнее</button>
+                </div>
+
+                <div class="product-card" data-id="quinoa">
+                    <img src="https://via.placeholder.com/150?text=Киноа" alt="Киноа">
+                    <h3>Киноа</h3>
+                    <p>Белок: 4г/100г</p>
+                    <button class="details-btn">Подробнее</button>
+                </div>
+
+                <div class="product-card" data-id="nuts">
+                    <img src="https://via.placeholder.com/150?text=Орехи" alt="Орехи">
+                    <h3>Орехи и семена</h3>
+                    <p>Белок: 15-25г/100г</p>
+                    <button class="details-btn">Подробнее</button>
+                </div>
+            </div>
+        </section>
+
+        <section id="nutrition" class="section">
+            <h2>Ключевые питательные вещества</h2>
+            <div class="nutrition-table">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Питательное вещество</th>
+                            <th>Зачем нужно</th>
+                            <th>Растительные источники</th>
+                            <th>Суточная норма</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Белок</td>
+                            <td>Строительный материал для мышц, органов, кожи</td>
+                            <td>Бобовые, тофу, темпе, сейтан, орехи</td>
+                            <td>0.8г/кг веса (минимум)</td>
+                        </tr>
+                        <tr>
+                            <td>Железо</td>
+                            <td>Кислородный обмен, энергия, иммунитет</td>
+                            <td>Чечевица, шпинат, тофу, темпе, зародыши пшеницы</td>
+                            <td>8-18мг (в зависимости от пола)</td>
+                        </tr>
+                        <tr>
+                            <td>Витамин B12</td>
+                            <td>Нервная система, образование крови</td>
+                            <td>Обогащенные продукты, пищевые дрожжи, БАДы</td>
+                            <td>2.4мкг</td>
+                        </tr>
+                        <tr>
+                            <td>Цинк</td>
+                            <td>Иммунитет, заживление ран, обмен веществ</td>
+                            <td>Бобовые, орехи, семена, цельнозерновые</td>
+                            <td>8-11мг</td>
+                        </tr>
+                        <tr>
+                            <td>Омега-3</td>
+                            <td>Здоровье сердца, мозга, противовоспалительное</td>
+                            <td>Семена льна, чиа, грецкие орехи</td>
+                            <td>1.1-1.6г</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <section id="meal-plans" class="section">
+            <h2>Планы питания</h2>
+            <div class="meal-plan-container">
+                <div class="meal-plan-tabs">
+                    <button class="tab-btn active" data-tab="beginner">Для начинающих</button>
+                    <button class="tab-btn" data-tab="athletic">Для спортсменов</button>
+                    <button class="tab-btn" data-tab="budget">Бюджетный вариант</button>
+                </div>
+                
+                <div class="meal-plan-content active" id="beginner">
+                    <h3>7-дневный план для начинающих</h3>
+                    <div class="day-plan">
+                        <h4>День 1</h4>
+                        <div class="meals">
+                            <div class="meal">
+                                <h5>Завтрак</h5>
+                                <p>Овсянка с ореховым маслом, семенами чиа и ягодами</p>
+                                <p><small>Белки: 12г, Железо: 2.5мг</small></p>
+                            </div>
+                            <div class="meal">
+                                <h5>Обед</h5>
+                                <p>Салат из киноа с нутом, авокадо и овощами</p>
+                                <p><small>Белки: 15г, Железо: 3мг</small></p>
+                            </div>
+                            <div class="meal">
+                                <h5>Ужин</h5>
+                                <p>Паста с чечевичным болоньезе и овощами</p>
+                                <p><small>Белки: 18г, Железо: 4мг</small></p>
+                            </div>
+                            <div class="meal">
+                                <h5>Перекус</h5>
+                                <p>Яблоко с миндальным маслом</p>
+                                <p><small>Белки: 4г, Железо: 0.5мг</small></p>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="expand-btn">Показать остальные дни</button>
+                </div>
+                
+                <div class="meal-plan-content" id="athletic">
+                    <h3>7-дневный план для спортсменов</h3>
+                    <div class="day-plan">
+                        <h4>День 1</h4>
+                        <div class="meals">
+                            <div class="meal">
+                                <h5>Завтрак</h5>
+                                <p>Тофу-скрэмбл с овощами и тосты из цельнозернового хлеба</p>
+                                <p><small>Белки: 25г, Железо: 3.5мг</small></p>
+                            </div>
+                            <div class="meal">
+                                <h5>Обед</h5>
+                                <p>Боул с темпе, буррито с рисом, фасолью и авокадо</p>
+                                <p><small>Белки: 30г, Железо: 5мг</small></p>
+                            </div>
+                            <div class="meal">
+                                <h5>Ужин</h5>
+                                <p>Сейтан-стейк с картофелем и запеченными овощами</p>
+                                <p><small>Белки: 35г, Железо: 4.5мг</small></p>
+                            </div>
+                            <div class="meal">
+                                <h5>Перекусы (2-3 в день)</h5>
+                                <p>Протеиновый смузи, хумус с морковью, орехи и фрукты</p>
+                                <p><small>Белки: 25г, Железо: 2мг</small></p>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="expand-btn">Показать остальные дни</button>
+                </div>
+                
+                <div class="meal-plan-content" id="budget">
+                    <h3>7-дневный бюджетный план</h3>
+                    <div class="day-plan">
+                        <h4>День 1</h4>
+                        <div class="meals">
+                            <div class="meal">
+                                <h5>Завтрак</h5>
+                                <p>Овсянка с бананом и арахисовым маслом</p>
+                                <p><small>Белки: 10г, Железо: 2мг</small></p>
+                            </div>
+                            <div class="meal">
+                                <h5>Обед</h5>
+                                <p>Чечевичный суп с зеленью и хлебом</p>
+                                <p><small>Белки: 12г, Железо: 4мг</small></p>
+                            </div>
+                            <div class="meal">
+                                <h5>Ужин</h5>
+                                <p>Фасоль тушеная с овощами и рисом</p>
+                                <p><small>Белки: 14г, Железо: 3.5мг</small></p>
+                            </div>
+                            <div class="meal">
+                                <h5>Перекус</h5>
+                                <p>Морковь с хумусом</p>
+                                <p><small>Белки: 5г, Железо: 0.8мг</small></p>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="expand-btn">Показать остальные дни</button>
+                </div>
+            </div>
+        </section>
+
+        <section id="recipes" class="section">
+            <h2>Рецепты заменителей мяса</h2>
+            <div class="recipes-container">
+                <div class="recipe-card">
+                    <img src="https://via.placeholder.com/150?text=Бургер" alt="Веганский бургер">
+                    <h3>Фасолево-грибной бургер</h3>
+                    <div class="recipe-tags">
+                        <span class="tag">Высокобелковый</span>
+                        <span class="tag">Железо</span>
+                        <span class="tag">Простой</span>
+                    </div>
+                    <p>Сочный бургер на основе фасоли и грибов, насыщенный белком и железом.</p>
+                    <button class="recipe-btn">Открыть рецепт</button>
+                </div>
+
+                <div class="recipe-card">
+                    <img src="https://via.placeholder.com/150?text=Темпе" alt="Темпе">
+                    <h3>Маринованный темпе</h3>
+                    <div class="recipe-tags">
+                        <span class="tag">Высокобелковый</span>
+                        <span class="tag">Пробиотик</span>
+                    </div>
+                    <p>Идеальная замена мясу в любом блюде с высоким содержанием белка и пробиотиков.</p>
+                    <button class="recipe-btn">Открыть рецепт</button>
+                </div>
+
+                <div class="recipe-card">
+                    <img src="https://via.placeholder.com/150?text=Лазанья" alt="Лазанья">
+                    <h3>Чечевичная лазанья</h3>
+                    <div class="recipe-tags">
+                        <span class="tag">Железо</span>
+                        <span class="tag">Семейный</span>
+                    </div>
+                    <p>Сытная и питательная лазанья с чечевичным соусом вместо мясного.</p>
+                    <button class="recipe-btn">Открыть рецепт</button>
+                </div>
+
+                <div class="recipe-card">
+                    <img src="https://via.placeholder.com/150?text=Сейтан" alt="Сейтан">
+                    <h3>Домашний сейтан</h3>
+                    <div class="recipe-tags">
+                        <span class="tag">Высокобелковый</span>
+                        <span class="tag">Базовый</span>
+                    </div>
+                    <p>Рецепт приготовления сейтана в домашних условиях для использования в любых блюдах.</p>
+                    <button class="recipe-btn">Открыть рецепт</button>
+                </div>
+            </div>
+            <button class="more-recipes-btn">Показать больше рецептов</button>
+        </section>
+
+        <section id="cravings" class="section">
+            <h2>Когда хочется мяса: стратегии преодоления</h2>
+            <div class="cravings-container">
+                <div class="craving-card">
+                    <h3>Психологические стратегии</h3>
+                    <ul>
+                        <li><strong>Анализ причин:</strong> Определите, хотите ли вы мясо из-за привычки, социального давления или вкусовых предпочтений</li>
+                        <li><strong>Постепенность:</strong> Снижайте потребление мяса постепенно, а не резко</li>
+                        <li><strong>Новые традиции:</strong> Создавайте новые пищевые ритуалы с растительными продуктами</li>
+                        <li><strong>Поддержка:</strong> Найдите сообщество единомышленников</li>
+                        <li><strong>Награда:</strong> Поощряйте себя за достижения в новом стиле питания</li>
+                    </ul>
+                </div>
+
+                <div class="craving-card">
+                    <h3>Кулинарные стратегии</h3>
+                    <ul>
+                        <li><strong>Умами:</strong> Используйте продукты с насыщенным вкусом (грибы, ферментированные продукты, томатная паста)</li>
+                        <li><strong>Текстура:</strong> Экспериментируйте с продуктами, дающими мясную текстуру (сейтан, темпе, жареный тофу)</li>
+                        <li><strong>Маринады:</strong> Используйте те же маринады, что и для мяса</li>
+                        <li><strong>Копчение и гриль:</strong> Эти методы приготовления придают "мясной" вкус растительным продуктам</li>
+                        <li><strong>Сытость:</strong> Добавляйте здоровые жиры для насыщения (авокадо, орехи, оливковое масло)</li>
+                    </ul>
+                </div>
+
+                <div class="craving-card">
+                    <h3>Физиологические стратегии</h3>
+                    <ul>
+                        <li><strong>Проверьте питательные вещества:</strong> Убедитесь, что получаете достаточно железа, цинка, B12 и белка</li>
+                        <li><strong>Частота приемов пищи:</strong> Ешьте чаще, но меньшими порциями</li>
+                        <li><strong>Физическая активность:</strong> Регулярные упражнения помогают регулировать аппетит</li>
+                        <li><strong>Гидратация:</strong> Иногда жажда маскируется как голод</li>
+                        <li><strong>Сон:</strong> Недостаток сна может усиливать тягу к определенным продуктам</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section id="faq" class="section">
+            <h2>Часто задаваемые вопросы</h2>
+            <div class="faq-container">
+                <div class="faq-item">
+                    <h3 class="faq-question">Сколько белка нужно потреблять, заменяя мясо в рационе?</h3>
+                    <div class="faq-answer">
+                        <p>Рекомендуемая норма белка составляет примерно 0,8 г/кг веса для среднестатистического взрослого человека. Для спортсменов и активных людей это может быть 1,2-2,0 г/кг веса.</p>
+                        <p>При растительном питании рекомендуется увеличить потребление белка на 10-15%, так как растительный белок усваивается несколько хуже. Важно также комбинировать разные источники растительного белка для получения всех незаменимых аминокислот.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <h3 class="faq-question">Как комбинировать растительные продукты для полноценного профиля аминокислот?</h3>
+                    <div class="faq-answer">
+                        <p>Классические комбинации для полноценного белка:</p>
+                        <ul>
+                            <li>Бобовые + зерновые (рис с фасолью, хумус с лавашом)</li>
+                            <li>Бобовые + орехи/семена (салат из нута с семенами подсолнечника)</li>
+                            <li>Зерновые + орехи/семена (овсянка с миндалем)</li>
+                        </ul>
+                        <p>Важно отметить, что необязательно употреблять эти комбинации в один прием пищи - достаточно разнообразить свой рацион в течение дня.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <h3 class="faq-question">Какие добавки необходимы при отказе от мяса?</h3>
+                    <div class="faq-answer">
+                        <p>При полном отказе от животных продуктов обязательным является приём:</p>
+                        <ul>
+                            <li><strong>Витамин B12</strong> - не содержится в растительной пище</li>
+                        </ul>
+                        <p>Рекомендуется контролировать уровень и при необходимости дополнять:</p>
+                        <ul>
+                            <li><strong>Витамин D</strong> - особенно в зимние месяцы</li>
+                            <li><strong>Омега-3 жирные кислоты</strong> (DHA и EPA) - альтернатива рыбьему жиру</li>
+                            <li><strong>Железо</strong> - особенно для женщин</li>
+                            <li><strong>Цинк</strong> - особенно при активных тренировках</li>
+                            <li><strong>Йод</strong> - если не употребляете йодированную соль или морские водоросли</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2023 Заменители мяса: Полное руководство</p>
+            <p>Информация представлена в образовательных целях и не является медицинской рекомендацией. Проконсультируйтесь с врачом перед изменением рациона.</p>
+        </div>
+    </footer>
+
+    <!-- Модальные окна -->
+    <div id="modal-overlay" class="modal-overlay">
+        <div id="product-modal" class="modal">
+            <div class="modal-header">
+                <h2 id="modal-title">Название продукта</h2>
+                <button id="close-modal" class="close-btn">&times;</button>
+            </div>
+            <div id="modal-content" class="modal-content">
+                <!-- Содержимое будет добавлено через JavaScript -->
+            </div>
+        </div>
+    </div>
+
+    <div id="recipe-modal-overlay" class="modal-overlay">
+        <div id="recipe-modal" class="modal recipe-modal">
+            <div class="modal-header">
+                <h2 id="recipe-modal-title">Название рецепта</h2>
+                <button id="close-recipe-modal" class="close-btn">&times;</button>
+            </div>
+            <div id="recipe-modal-content" class="modal-content">
+                <!-- Содержимое будет добавлено через JavaScript -->
+            </div>
+        </div>
+    </div>
+
+    <script>
+      document.addEventListener('DOMContentLoaded', function() {
+    // Данные о продуктах
+    const productData = {
+        tofu: {
+            title: "Тофу",
+            nutrition: {
+                protein: "8г на 100г",
+                iron: "2.7мг на 100г",
+                calcium: "350мг на 100г",
+                calories: "76 ккал на 100г"
+            },
+            description: "Тофу - это продукт из соевых бобов, богатый белком и минералами. Имеет нейтральный вкус, что делает его универсальным ингредиентом, способным впитывать вкусы других продуктов.",
+            preparation: "Тофу доступен в разных текстурах: от мягкого (для смузи и соусов) до очень твердого (для жарки и гриля). Перед приготовлением твердый тофу рекомендуется отжать от лишней жидкости, заморозить (для изменения текстуры) или замариновать для насыщения вкусом.",
+            combinations: {
+                good: ["Овощи", "Зелень", "Соевый соус", "Чеснок", "Имбирь", "Кунжут", "Рис"],
+                bad: ["Фрукты (кроме смузи)", "Молочные продукты"]
+            },
+            warnings: "Избегайте употребления избытка сои при некоторых гормональных заболеваниях. Выбирайте тофу без ГМО."
+        },
+        tempeh: {
+            title: "Темпе",
+            nutrition: {
+                protein: "19г на 100г",
+                iron: "2.7мг на 100г",
+                calcium: "111мг на 100г",
+                calories: "193 ккал на 100г"
+            },
+            description: "Темпе – ферментированный продукт из соевых бобов, содержащий все элементы цельных бобов, включая клетчатку. Имеет ореховый вкус и плотную текстуру, напоминающую мясо.",
+            preparation: "Темпе можно нарезать, замариновать и использовать в жарке, запекании или на гриле. Предварительное отваривание в течение 10 минут смягчает вкус и текстуру, делая его более нейтральным.",
+            combinations: {
+                good: ["Острые специи", "Копченый соус", "Чеснок", "Овощи", "Бобовые", "Рис"],
+                bad: ["Сладкие продукты"]
+            },
+            warnings: "Темпе содержит пробиотики, поэтому может вызвать временное вздутие у непривычных к нему людей. Начинайте с малых порций."
+        },
+        seitan: {
+            title: "Сейтан",
+            nutrition: {
+                protein: "25г на 100г",
+                iron: "1.5мг на 100г",
+                calcium: "24мг на 100г",
+                calories: "370 ккал на 100г"
+            },
+            description: "Сейтан изготавливается из пшеничного глютена. Имеет текстуру, очень близкую к мясу, и способен впитывать любые вкусы. Один из самых белковых растительных продуктов.",
+            preparation: "Сейтан можно купить готовым или приготовить самостоятельно из пшеничной клейковины. Его можно запекать, жарить, тушить, использовать в супах, бургерах и даже как начинку для пиццы.",
+            combinations: {
+                good: ["Соевый соус", "Чеснок", "Овощи", "Грибы", "Паприка", "Тмин"],
+                bad: []
+            },
+            warnings: "Не подходит людям с целиакией или чувствительностью к глютену. Содержит много натрия, что важно для людей с гипертонией."
+        },
+        legumes: {
+            title: "Бобовые",
+            nutrition: {
+                protein: "7-9г на 100г",
+                iron: "2-5мг на 100г",
+                calcium: "50-130мг на 100г",
+                calories: "115-350 ккал на 100г"
+            },
+            description: "Бобовые (фасоль, нут, чечевица, горох) - отличный источник растительного белка, клетчатки и микроэлементов. Каждый вид имеет свой уникальный вкус и текстуру.",
+            preparation: "Сухие бобовые требуют замачивания (кроме чечевицы) и длительной варки. Консервированные можно использовать сразу. Подходят для супов, салатов, пюре, котлет, пасты и многих других блюд.",
+            combinations: {
+                good: ["Зерновые", "Овощи", "Специи", "Орехи", "Семена", "Масла"],
+                bad: ["Кислые фрукты в одном приеме пищи"]
+            },
+            warnings: "Могут вызывать газообразование. Добавляйте в рацион постепенно. Не недоваривайте красную фасоль, она содержит токсичные вещества, разрушающиеся при термической обработке."
+        },
+        quinoa: {
+            title: "Киноа",
+            nutrition: {
+                protein: "4г на 100г",
+                iron: "1.5мг на 100г",
+                calcium: "47мг на 100г",
+                calories: "120 ккал на 100г"
+            },
+            description: "Киноа – псевдозерно, содержащее все девять незаменимых аминокислот, что делает его полноценным источником белка. Имеет ореховый вкус и приятную хрустящую текстуру.",
+            preparation: "Перед приготовлением киноа нужно промыть, чтобы удалить горький сапонин. Варится как рис, подходит для каш, салатов, гарниров, запеканок.",
+            combinations: {
+                good: ["Овощи", "Бобовые", "Орехи", "Семена", "Фрукты", "Зелень"],
+                bad: []
+            },
+            warnings: "Не содержит глютен, но может производиться на оборудовании, где обрабатываются глютеновые злаки."
+        },
+        nuts: {
+            title: "Орехи и семена",
+            nutrition: {
+                protein: "15-25г на 100г",
+                iron: "2-4мг на 100г",
+                calcium: "50-970мг на 100г",
+                calories: "550-650 ккал на 100г"
+            },
+            description: "Орехи и семена - концентрированный источник белка, здоровых жиров и микроэлементов. Каждый вид имеет свой уникальный профиль питательных веществ.",
+            preparation: "Можно употреблять сырыми, жареными, в виде паст, добавлять в салаты, десерты, смузи, использовать для соусов и заправок.",
+            combinations: {
+                good: ["Фрукты", "Овощи", "Зерновые", "Бобовые", "Зелень", "Специи"],
+                bad: []
+            },
+            warnings: "Высококалорийны, употребляйте в умеренных количествах. Могут вызывать аллергические реакции."
+        }
+    };
+
+    // Данные о рецептах
+    const recipeData = [
+        {
+            title: "Фасолево-грибной бургер",
+            ingredients: [
+                "1 банка (400г) консервированной красной фасоли, промытой и высушенной",
+                "200г грибов (шампиньоны или портобелло), мелко нарезанных",
+                "1 средняя луковица, мелко нарезанная",
+                "2 зубчика чеснока, измельченных",
+                "1 ст. л. соевого соуса",
+                "1/2 ст. л. жидкого дыма (по желанию)",
+                "1/2 стакана овсяных хлопьев или молотых грецких орехов",
+                "2 ст. л. муки (можно нутовую или любую без глютена)",
+                "1 ст. л. оливкового масла для обжарки + для жарки котлет",
+                "Специи: паприка, тмин, черный перец, сушеный орегано по вкусу",
+                "Соль по вкусу"
+            ],
+            instructions: [
+                "Разогрейте сковороду на среднем огне, добавьте оливковое масло, обжарьте лук до прозрачности (3-4 минуты).",
+                "Добавьте грибы и чеснок, готовьте до испарения жидкости (5-7 минут).",
+                "Добавьте соевый соус, жидкий дым и специи, перемешайте и снимите с огня.",
+                "В большой миске разомните фасоль вилкой или в блендере (оставьте часть фасолин целыми для текстуры).",
+                "Добавьте в фасоль грибную смесь, овсяные хлопья и муку, тщательно перемешайте.",
+                "Сформируйте 4-6 котлет, при необходимости смоченными руками.",
+                "Охладите котлеты в холодильнике 30 минут (можно пропустить, но они будут менее плотными).",
+                "Разогрейте сковороду с небольшим количеством масла на среднем огне.",
+                "Обжарьте котлеты по 4-5 минут с каждой стороны до золотистой корочки.",
+                "Подавайте в булочках с салатом, помидорами, соусами и другими любимыми топпингами."
+            ],
+            notes: "Эти бургеры можно заморозить в сыром виде для последующего использования. Просто разделите их пергаментной бумагой и храните в морозильнике до 3 месяцев. Они содержат около 15г белка, 3,5мг железа и 120мг кальция на котлету.",
+            nutritionFacts: {
+                protein: "15г на котлету",
+                iron: "3.5мг на котлету",
+                calcium: "120мг на котлету", 
+                calories: "220 ккал на котлету"
+            },
+            preparationTime: "20 минут + 30 минут охлаждения",
+            cookingTime: "10 минут"
+        },
+        {
+            title: "Маринованный темпе",
+            ingredients: [
+                "250г темпе",
+                "3 ст. л. соевого соуса или тамари",
+                "2 ст. л. кленового сиропа или агавы (можно заменить 1 ст. л. коричневого сахара, растворенного в 1 ст. л. воды)",
+                "1 ст. л. рисового уксуса или лимонного сока",
+                "1 ст. л. кунжутного масла (можно заменить оливковым)",
+                "2 зубчика чеснока, измельченных",
+                "1 ч. л. свежего тертого имбиря (или 1/4 ч. л. сухого)",
+                "1/4 ч. л. копченой паприки",
+                "1/4 ч. л. черного перца",
+                "1/8 ч. л. кайенского перца (по желанию, для остроты)"
+            ],
+            instructions: [
+                "Нарежьте темпе на порционные куски – полоски, кубики или треугольники толщиной около 0,5-1 см.",
+                "При желании, отварите темпе в воде 10 минут для смягчения вкуса (не обязательно).",
+                "В миске смешайте все ингредиенты для маринада.",
+                "Поместите темпе в контейнер с плотной крышкой или в пакет с застежкой и залейте маринадом.",
+                "Аккуратно встряхните, чтобы все кусочки покрылись маринадом.",
+                "Маринуйте минимум 2 часа, лучше 8 часов или на ночь в холодильнике.",
+                "Способы приготовления маринованного темпе:",
+                "- Обжарка: на среднем огне по 3-4 минуты с каждой стороны до золотистой корочки",
+                "- Запекание: 180°C, 20-25 минут, периодически переворачивая и поливая маринадом",
+                "- Гриль: по 3-5 минут с каждой стороны, смазывая оставшимся маринадом"
+            ],
+            notes: "Маринованный темпе отлично подходит для сэндвичей, боулов с рисом или другими зерновыми, салатов, обертываний, стир-фрая и даже как закуска. Содержит около 19г белка и 3мг железа на 100г.",
+            nutritionFacts: {
+                protein: "19г на 100г",
+                iron: "3мг на 100г", 
+                calcium: "111мг на 100г",
+                calories: "193 ккал на 100г"
+            },
+            preparationTime: "15 минут + 2-8 часов маринования",
+            cookingTime: "10-25 минут (в зависимости от метода)"
+        },
+        {
+            title: "Чечевичная лазанья",
+            ingredients: [
+                "1 стакан сухой зеленой или коричневой чечевицы, промытой",
+                "2 банки (по 400г) томатов в собственном соку",
+                "1 большая луковица, мелко нарезанная",
+                "2 моркови, тертые",
+                "3 зубчика чеснока, измельченных",
+                "1 стакан грибов, нарезанных (по желанию)",
+                "2 ст. л. томатной пасты",
+                "2 ч. л. сушеного орегано",
+                "1 ч. л. сушеного базилика",
+                "1/2 ч. л. тимьяна",
+                "1/4 ч. л. красного перца (по желанию)",
+                "2 ст. л. оливкового масла",
+                "Соль и перец по вкусу",
+                "12-15 листов лазаньи (можно без предварительного отваривания)",
+                "Для соуса Бешамель на растительной основе:",
+                "3 ст. л. оливкового масла или растительного масла",
+                "3 ст. л. муки (пшеничной или цельнозерновой)",
+                "3 стакана растительного молока (соевое, миндальное, овсяное)",
+                "1/4 ч. л. мускатного ореха",
+                "Соль и перец по вкусу",
+                "200г растительного сыра, тертого (по желанию)"
+            ],
+            instructions: [
+                "Предварительно разогрейте духовку до 180°C.",
+                "Приготовьте чечевицу: в кастрюле доведите до кипения 3 стакана воды, добавьте чечевицу, уменьшите огонь и варите около 20-25 минут, пока чечевица не станет мягкой, но не разваренной. Слейте лишнюю воду.",
+                "В большой сковороде на среднем огне разогрейте 2 ст. л. оливкового масла, обжарьте лук до прозрачности (5 минут).",
+                "Добавьте чеснок, морковь и грибы (если используете), готовьте еще 5 минут.",
+                "Добавьте томаты, томатную пасту, специи, соль и перец. Разомните томаты вилкой или используйте блендер для более гладкой текстуры.",
+                "Добавьте приготовленную чечевицу, перемешайте и тушите 10-15 минут, пока соус не загустеет. При необходимости добавьте немного воды.",
+                "Приготовьте соус Бешамель: в кастрюле на среднем огне разогрейте масло, добавьте муку и готовьте 2-3 минуты, постоянно помешивая.",
+                "Постепенно вливайте растительное молоко, продолжая помешивать, чтобы не было комочков.",
+                "Когда соус загустеет (5-7 минут), добавьте мускатный орех, соль и перец. Снимите с огня.",
+              // Продолжение данных о рецептах
+                "Соберите лазанью: на дно формы для запекания выложите тонкий слой соуса Бешамель, затем слой листов лазаньи, слой чечевичного соуса, снова Бешамель.",
+                "Повторите слои 2-3 раза, заканчивая слоем Бешамеля. Посыпьте растительным сыром, если используете.",
+                "Накройте форму фольгой и запекайте 25 минут. Затем снимите фольгу и запекайте еще 10-15 минут, пока верх не подрумянится.",
+                "Дайте лазанье постоять 10-15 минут перед подачей для лучшего нарезания."
+            ],
+            notes: "Эту лазанью можно приготовить заранее и хранить в холодильнике до 2 дней или заморозить до 3 месяцев. Богата белком и железом благодаря чечевице и содержит полный набор аминокислот. При подаче можно посыпать питательными дрожжами для сырного вкуса и дополнительного B12.",
+            nutritionFacts: {
+                protein: "15г на порцию",
+                iron: "4.5мг на порцию", 
+                calcium: "150мг на порцию",
+                calories: "380 ккал на порцию"
+            },
+            preparationTime: "30 минут",
+            cookingTime: "50 минут"
+        },
+        {
+            title: "Домашний сейтан",
+            ingredients: [
+                "2 стакана пшеничной клейковины (глютена)",
+                "1/4 стакана питательных дрожжей (опционально, для вкуса)",
+                "2 ч. л. чесночного порошка",
+                "2 ч. л. лукового порошка",
+                "1 ч. л. паприки (обычной или копченой)",
+                "1 ч. л. итальянских трав или тимьяна",
+                "1 ч. л. соли",
+                "1/4 ч. л. черного перца",
+                "1 3/4 стакана овощного бульона или воды",
+                "2 ст. л. соевого соуса или тамари",
+                "1 ст. л. оливкового или кунжутного масла",
+                "1 ст. л. томатной пасты (опционально)",
+                "Для бульона для варки:",
+                "6 стаканов овощного бульона или воды",
+                "1/4 стакана соевого соуса",
+                "2 зубчика чеснока, раздавленных",
+                "1 лавровый лист",
+                "1 ч. л. разных целых специй (перец горошком, гвоздика, кориандр)"
+            ],
+            instructions: [
+                "В большой миске смешайте все сухие ингредиенты: пшеничную клейковину, питательные дрожжи (если используете), чесночный и луковый порошок, паприку, травы, соль и перец.",
+                "В другой миске или мерном стакане смешайте жидкие ингредиенты: бульон, соевый соус, масло и томатную пасту (если используете).",
+                "Постепенно влейте жидкую смесь в сухую, перемешивая сначала вилкой или ложкой, затем руками. Возможно, потребуется немного больше или меньше жидкости - тесто должно быть упругим, но не липким или сухим.",
+                "Месите тесто 2-3 минуты, чтобы развить глютен. Сформируйте колбаску или буханку.",
+                "В большой кастрюле доведите до кипения все ингредиенты для бульона.",
+                "Осторожно опустите сейтан в кипящий бульон, уменьшите огонь до минимума, чтобы жидкость едва кипела.",
+                "Частично накройте крышкой и варите 1 час, при необходимости добавляя бульон или воду, чтобы сейтан был полностью погружен.",
+                "Дайте сейтану остыть в бульоне. Он станет более плотным и упругим при остывании.",
+                "Выньте сейтан, обсушите бумажным полотенцем. Храните в холодильнике до 1 недели, в бульоне или без него, или заморозьте до 3 месяцев."
+            ],
+            notes: "Домашний сейтан может быть нарезан, измельчен, разорван, использован в любых рецептах, требующих мяса. Его можно жарить, тушить, запекать, добавлять в супы и рагу. Для разных вкусов варьируйте специи - добавляйте карри для восточных блюд, копченую паприку и кумин для мексиканских, или розмарин и тимьян для европейских. Одна порция содержит 25г белка!",
+            nutritionFacts: {
+                protein: "25г на 100г",
+                iron: "1.5мг на 100г", 
+                calcium: "24мг на 100г",
+                calories: "370 ккал на 100г"
+            },
+            preparationTime: "15 минут",
+            cookingTime: "1 час + время для остывания"
+        }
+    ];
+
+    // Карточки продуктов
+    const productCards = document.querySelectorAll('.product-card');
+    const productModal = document.getElementById('product-modal');
+    const modalOverlay = document.getElementById('modal-overlay');
+    const closeModal = document.getElementById('close-modal');
+    const modalTitle = document.getElementById('modal-title');
+    const modalContent = document.getElementById('modal-content');
+
+    // Открыть модальное окно продукта
+    productCards.forEach(card => {
+        const detailsBtn = card.querySelector('.details-btn');
+        detailsBtn.addEventListener('click', () => {
+            const productId = card.getAttribute('data-id');
+            const product = productData[productId];
+            
+            modalTitle.textContent = product.title;
+            
+            // Заполнение контента
+            let content = `
+                <div class="product-description">
+                    <p>${product.description}</p>
+                </div>
+                
+                <div class="nutrition-facts">
+                    <h4>Пищевая ценность (на 100г)</h4>
+                    <ul>
+            `;
+            
+            for (const [key, value] of Object.entries(product.nutrition)) {
+                content += `<li><span>${key === 'protein' ? 'Белок' : 
+                                       key === 'iron' ? 'Железо' : 
+                                       key === 'calcium' ? 'Кальций' : 
+                                       key === 'calories' ? 'Калории' : key}</span><span>${value}</span></li>`;
+            }
+            
+            content += `
+                    </ul>
+                </div>
+                
+                <div class="preparation">
+                    <h4>Как готовить и использовать</h4>
+                    <p>${product.preparation}</p>
+                </div>
+                
+                <div class="combination">
+                    <h4>С чем сочетать</h4>
+                    <div class="combination-grid good">
+            `;
+            
+            product.combinations.good.forEach(item => {
+                content += `<div class="combination-item">${item}</div>`;
+            });
+            
+            content += `
+                    </div>
+                    ${product.combinations.bad.length > 0 ? '<h4>Не рекомендуется сочетать</h4>' : ''}
+                    ${product.combinations.bad.length > 0 ? '<div class="combination-grid bad">' : ''}
+            `;
+            
+            product.combinations.bad.forEach(item => {
+                content += `<div class="combination-item">${item}</div>`;
+            });
+            
+            content += `
+                    ${product.combinations.bad.length > 0 ? '</div>' : ''}
+                </div>
+            `;
+            
+            if (product.warnings) {
+                content += `
+                    <div class="warning">
+                        <h4>Обратите внимание</h4>
+                        <p>${product.warnings}</p>
+                    </div>
+                `;
+            }
+            
+            modalContent.innerHTML = content;
+            
+            // Показать модальное окно
+            modalOverlay.classList.add('active');
+            setTimeout(() => {
+                productModal.style.opacity = '1';
+                productModal.style.transform = 'translateY(0)';
+            }, 10);
+        });
+    });
+
+    // Закрыть модальное окно продукта
+    closeModal.addEventListener('click', () => {
+        modalOverlay.classList.remove('active');
+        productModal.style.opacity = '0';
+        productModal.style.transform = 'translateY(20px)';
+    });
+
+    // Модальное окно также закрывается при клике вне его области
+    modalOverlay.addEventListener('click', (e) => {
+        if (e.target === modalOverlay) {
+            modalOverlay.classList.remove('active');
+            productModal.style.opacity = '0';
+            productModal.style.transform = 'translateY(20px)';
+        }
+    });
+
+    // Вкладки плана питания
+    const tabBtns = document.querySelectorAll('.tab-btn');
+    const mealPlanContents = document.querySelectorAll('.meal-plan-content');
+
+    tabBtns.forEach(btn => {
+        btn.addEventListener('click', () => {
+            const tabId = btn.getAttribute('data-tab');
+            
+            // Сбросить активные вкладки
+            tabBtns.forEach(b => b.classList.remove('active'));
+            mealPlanContents.forEach(c => c.classList.remove('active'));
+            
+            // Активировать выбранную
+            btn.classList.add('active');
+            document.getElementById(tabId).classList.add('active');
+        });
+    });
+
+    // Показать/скрыть дополнительные дни в плане питания
+    const expandBtns = document.querySelectorAll('.expand-btn');
+    
+    expandBtns.forEach(btn => {
+        btn.addEventListener('click', function() {
+            const parentContent = this.closest('.meal-plan-content');
+            const extraDays = parentContent.querySelectorAll('.day-plan:not(:first-child)');
+            
+            if (this.textContent === 'Показать остальные дни') {
+                // Создать остальные дни, если их еще нет
+                if (extraDays.length === 0) {
+                    for (let i = 2; i <= 7; i++) {
+                        const dayPlan = document.createElement('div');
+                        dayPlan.className = 'day-plan';
+                        dayPlan.innerHTML = `
+                            <h4>День ${i}</h4>
+                            <div class="meals">
+                                <div class="meal">
+                                    <h5>Завтрак</h5>
+                                    <p>Пример завтрака для дня ${i}.</p>
+                                    <p><small>Белки: 10-15г, Железо: 2-3мг</small></p>
+                                </div>
+                                <div class="meal">
+                                    <h5>Обед</h5>
+                                    <p>Пример обеда для дня ${i}.</p>
+                                    <p><small>Белки: 15-20г, Железо: 3-4мг</small></p>
+                                </div>
+                                <div class="meal">
+                                    <h5>Ужин</h5>
+                                    <p>Пример ужина для дня ${i}.</p>
+                                    <p><small>Белки: 15-20г, Железо: 3-4мг</small></p>
+                                </div>
+                                <div class="meal">
+                                    <h5>Перекус</h5>
+                                    <p>Пример перекуса для дня ${i}.</p>
+                                    <p><small>Белки: 5г, Железо: 1мг</small></p>
+                                </div>
+                            </div>
+                        `;
+                        parentContent.insertBefore(dayPlan, this);
+                    }
+                } else {
+                    // Показать существующие дни
+                    extraDays.forEach(day => {
+                        day.style.display = 'block';
+                    });
+                }
+                this.textContent = 'Скрыть остальные дни';
+            } else {
+                // Скрыть дни
+                extraDays.forEach(day => {
+                    day.style.display = 'none';
+                });
+                this.textContent = 'Показать остальные дни';
+            }
+        });
+    });
+
+    // Рецепты
+    const recipeButtons = document.querySelectorAll('.recipe-btn');
+    const recipeModalOverlay = document.getElementById('recipe-modal-overlay');
+    const recipeModal = document.getElementById('recipe-modal');
+    const closeRecipeModal = document.getElementById('close-recipe-modal');
+    const recipeModalTitle = document.getElementById('recipe-modal-title');
+    const recipeModalContent = document.getElementById('recipe-modal-content');
+
+    // Открыть модальное окно рецепта
+    recipeButtons.forEach((btn, index) => {
+        btn.addEventListener('click', () => {
+            const recipe = recipeData[index];
+            
+            recipeModalTitle.textContent = recipe.title;
+            
+            // Заполнение контента
+            let content = `
+                <div class="recipe-nutrition-facts nutrition-facts">
+                    <h4>Пищевая ценность</h4>
+                    <ul>
+            `;
+            
+            for (const [key, value] of Object.entries(recipe.nutritionFacts)) {
+                content += `<li><span>${key === 'protein' ? 'Белок' : 
+                                      key === 'iron' ? 'Железо' : 
+                                      key === 'calcium' ? 'Кальций' : 
+                                      key === 'calories' ? 'Калории' : key}</span><span>${value}</span></li>`;
+            }
+            
+            content += `
+                    </ul>
+                    <p><strong>Время подготовки:</strong> ${recipe.preparationTime}</p>
+                    <p><strong>Время приготовления:</strong> ${recipe.cookingTime}</p>
+                </div>
+                
+                <div class="recipe-ingredients">
+                    <h4>Ингредиенты</h4>
+                    <ul>
+            `;
+            
+            recipe.ingredients.forEach(ingredient => {
+                content += `<li>${ingredient}</li>`;
+            });
+            
+            content += `
+                    </ul>
+                </div>
+                
+                <div class="recipe-instructions">
+                    <h4>Инструкции</h4>
+                    <ol>
+            `;
+            
+            recipe.instructions.forEach(instruction => {
+                content += `<li>${instruction}</li>`;
+            });
+            
+            content += `
+                    </ol>
+                </div>
+            `;
+            
+            if (recipe.notes) {
+                content += `
+                    <div class="recipe-notes">
+                        <h4>Примечания</h4>
+                        <p>${recipe.notes}</p>
+                    </div>
+                `;
+            }
+            
+            recipeModalContent.innerHTML = content;
+            
+            // Показать модальное окно
+            recipeModalOverlay.classList.add('active');
+            setTimeout(() => {
+                recipeModal.style.opacity = '1';
+                recipeModal.style.transform = 'translateY(0)';
+            }, 10);
+        });
+    });
+
+    // Закрыть модальное окно рецепта
+    closeRecipeModal.addEventListener('click', () => {
+        recipeModalOverlay.classList.remove('active');
+        recipeModal.style.opacity = '0';
+        recipeModal.style.transform = 'translateY(20px)';
+    });
+
+    // Модальное окно рецепта также закрывается при клике вне его области
+    recipeModalOverlay.addEventListener('click', (e) => {
+        if (e.target === recipeModalOverlay) {
+            recipeModalOverlay.classList.remove('active');
+            recipeModal.style.opacity = '0';
+            recipeModal.style.transform = 'translateY(20px)';
+        }
+    });
+
+    // FAQ (Аккордеон)
+    const faqQuestions = document.querySelectorAll('.faq-question');
+    
+    faqQuestions.forEach(question => {
+        question.addEventListener('click', () => {
+            const faqItem = question.parentNode;
+            const isActive = faqItem.classList.contains('active');
+            
+            // Закрыть все
+            document.querySelectorAll('.faq-item').forEach(item => {
+                item.classList.remove('active');
+            });
+            
+            // Открыть текущий, если он был закрыт
+            if (!isActive) {
+                faqItem.classList.add('active');
+            }
+        });
+    });
+
+    // Показать больше рецептов
+    const moreRecipesBtn = document.querySelector('.more-recipes-btn');
+    
+    if (moreRecipesBtn) {
+        moreRecipesBtn.addEventListener('click', () => {
+            const recipesContainer = document.querySelector('.recipes-container');
+            
+            // Пример новых рецептов
+            const newRecipes = [
+                {
+                    title: "Тофу-скрэмбл",
+                    image: "https://via.placeholder.com/150?text=Тофу-скрэмбл",
+                    tags: ["Высокобелковый", "Завтрак", "Быстрый"],
+                    description: "Веганская альтернатива яичнице, насыщенная белком и куркумой для 'яичного' цвета."
+                },
+                {
+                    title: "Нутовая мука 'омлет'",
+                    image: "https://via.placeholder.com/150?text=Омлет",
+                    tags: ["Высокобелковый", "Без глютена"],
+                    description: "Нутовая мука создает идеальную консистенцию для веганского омлета с высоким содержанием белка и клетчатки."
+                },
+                {
+                    title: "Чечевичный дал",
+                    image: "https://via.placeholder.com/150?text=Дал",
+                    tags: ["Высокобелковый", "Железо", "Один котелок"],
+                    description: "Ароматное индийское блюдо из красной чечевицы с богатым содержанием белка и железа."
+                },
+                {
+                    title: "Фалафель из нута",
+                    image: "https://via.placeholder.com/150?text=Фалафель",
+                    tags: ["Высокобелковый", "Ближневосточный"],
+                    description: "Традиционные котлетки из нута, богатые белком и клетчаткой, идеальны для питы или салатов."
+                }
+            ];
+            
+            // Создание новых карточек рецептов
+            newRecipes.forEach(recipe => {
+                const recipeCard = document.createElement('div');
+                recipeCard.className = 'recipe-card';
+                
+                recipeCard.innerHTML = `
+                    <img src="${recipe.image}" alt="${recipe.title}">
+                    <h3>${recipe.title}</h3>
+                    <div class="recipe-tags">
+                        ${recipe.tags.map(tag => `<span class="tag">${tag}</span>`).join('')}
+                    </div>
+                    <p>${recipe.description}</p>
+                    <button class="recipe-btn">Открыть рецепт</button>
+                `;
+                
+                recipesContainer.appendChild(recipeCard);
+            });
+            
+            // Обновление обработчиков для новых кнопок
+            document.querySelectorAll('.recipe-btn:not([data-initialized])').forEach(btn => {
+                btn.setAttribute('data-initialized', 'true');
+                btn.addEventListener('click', () => {
+                    alert('Рецепт находится в разработке!');
+                });
+            });
+            
+            // Скрыть кнопку после добавления
+            moreRecipesBtn.style.display = 'none';
+        });
+    }
+
+    // Плавная прокрутка для навигации
+    document.querySelectorAll('nav a').forEach(anchor => {
+        anchor.addEventListener('click', function(e) {
+            e.preventDefault();
+            
+            const targetId = this.getAttribute('href');
+            const targetSection = document.querySelector(targetId);
+            
+            window.scrollTo({
+                top: targetSection.offsetTop - 80,
+                behavior: 'smooth'
+            });
+        });
+    });
+});
+    </script>
+</body>
+</html>
